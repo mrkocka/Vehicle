@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: title-font;
 }
 
 @font-face {
@@ -24,20 +25,30 @@ body {
   min-height: 100vh;
 }
 
+.active {
+  outline: 7px solid var(--main-dif);
+  transform: scale(1.1);
+} 
+
+.null{
+    display: none;
+}
+
 main {
   background-color: var(--main-bc);
   width: 65rem;
-  height: 50rem;
+  height: 56rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 25px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* gap: 2.3rem; */
+  justify-content: space-around;
 }
 
 h1 {
-  font-family: title-font;
   text-transform: uppercase;
   text-align: center;
   color: var(--main-dif);
@@ -46,54 +57,117 @@ h1 {
 }
 
 .vehicle-container {
- background-color: var(--main-test); 
   width: 60rem;
-  height: 35rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: center;
   justify-content: center;
+  /*  background-color: var(--main-test); */
 }
 
-.v-img{
-    background-color: var(--main-test);
+.v-img {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px 15px 0 0;
+}
+.v-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.v-text {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.row-1,
+.row-2 {
+  gap: 3rem;
+  display: flex;
+}
+
+.row-1-style {
+  background-color: var(--main-bc);
+  width: 15rem;
+  height: 10rem;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 100ms linear;
+}
+
+
+
+
+
+.row-2-style {
+  background-color: var(--main-bc);
+  width: 22rem;
+  height: 12rem;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.row-1-style:hover,
+.row-2-style:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/*Select*/
+
+select {
+  width: 30rem;
+  height: 4rem;
+  background-color: var(--main-dif);
+  color: var(--main-bc);
+  font-size: 1.7rem;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+option {
+  font-size: 1.3rem;
+}
+
+
+/*Button*/
+
+.button-container{
+    /* background-color: var(--main-test); */
     width: 100%;
-    height: 80%;
-    border-radius: 15px 15px 0 0;
-}
-.v-text{
-   margin-bottom: .5rem;
+    text-align: end;
 }
 
 
-.row-1, .row-2{
-    gap: 2rem;
-    display: flex;
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  font-size: 2.1rem;
+  letter-spacing: .1rem;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--main-dif);
+  color: var(--main-bc);
+  transition-duration: 800ms;
 }
 
-.row-1-style{
+.btn:hover{
+    color: var(--main-dif);
     background-color: var(--main-bc);
-    width: 18rem;
-    height: 12rem;
-    border: none;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.row-2-style{
-    background-color: var(--main-bc);
-    width: 20rem;
-    height: 12rem;
-    border: none;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    outline: 3px solid var(--main-dif);
+    cursor: pointer;
 }
