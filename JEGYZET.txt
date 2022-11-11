@@ -6,3 +6,4 @@ sebesség táblák: https://www.pngegg.com/hu/png-zokag
 
 
 
+if else elágazással meg lehet csinálni, ha egy jármű active classonvan és x vagy  y közlekedési hely vanki írva hozzá akkor x és y divet jelenítse meg. 
