@@ -13,47 +13,87 @@
       <section class="vehicle-container" id="js-container">
         <div class="row-1" id="row-first">
           <div class="null active">1</div>
-          <button class="row-1-style vi-button" id="js-szgk" value="1">
+
+          <label for="sgk-chec" class="row-1-style vi-button">
             <div class="v-img">
               <img src="./img/szgk.png" alt="személygépjármű" />
             </div>
             <p class="v-text">Személygépkocsi</p>
-          </button>
-          <button class="row-1-style vi-button" value="2">
+            <input type="checkbox" name="" id="sgk-chec" />
+          </label>
+
+          <label for="moped-chec" class="row-1-style vi-button">
             <div class="v-img">
               <img src="./img/mkp50.png" alt="motorkerékpár50m3" />
             </div>
             <p class="v-text">Motorkerékpár 50m3</p>
-          </button>
-          <button class="row-1-style vi-button" value="3">
+            <input type="checkbox" name="" id="moped-chec" />
+          </label>
+
+          <label for="bike-chec" class="row-1-style vi-button">
             <div class="v-img">
               <img src="./img/mkp.png" alt="motorkerékpár" />
             </div>
             <p class="v-text">Motorkerékpár</p>
-          </button>
+            <input type="checkbox" name="" id="bike-chec" />
+          </label>
         </div>
         <div class="row-2">
-          <button class="row-2-style vi-button" value="4">
-            <div class="v-img"><img src="./img/busz.png" alt="busz" /></div>
+          <label for="bus-chec" class="row-2-style vi-button">
+            <div class="v-img">
+              <img src="./img/busz.png" alt="busz" />
+            </div>
             <p class="v-text">Busz</p>
-          </button>
-          <button class="row-2-style vi-button" value="5">
-            <div class="v-img"><img src="./img/kamion.png" alt="kamion" /></div>
+            <input type="checkbox" name="" id="bus-chec" />
+          </label>
+
+          <label for="truck-chec" class="row-2-style vi-button">
+            <div class="v-img">
+              <img src="./img/kamion.png" alt="kamion" />
+            </div>
             <p class="v-text">Kamion</p>
-          </button>
+            <input type="checkbox" name="" id="truck-chec" />
+          </label>
         </div>
       </section>
-      <select name="location" id="location" class="options-list">
-        <option value="1">Hol közlekedsz? Válassz helyszínt!</option>
-        <option value="2">Lakott területen belül</option>
-        <option value="3">Lakott területen kívül</option>
-        <option value="4">Autóúton</option>
-        <option value="5">Autópályán</option>
-      </select>
+
+      <form id="test" action="">
+        <select name="location" id="location" class="options-list">
+          <option value="0">Hol közlekedsz? Válassz helyszínt!</option>
+          <option value="1">Lakott területen belül</option>
+          <option value="2">Lakott területen kívül</option>
+          <option value="3">Autóúton</option>
+          <option value="4">Autópályán</option>
+        </select>
+      </form>
+
       <div class="button-container">
-        <button class="btn">Lássuk</button>
+        <button class="btn" id="submit">Lássuk</button>
       </div>
     </main>
+
+    <div id="question-area" class="null">
+      <div class="question">
+        <div class="close-area">
+          <img src="./img/button/close.svg" alt="xGomb" id="close-button" />
+        </div>
+        <h3>Vontatsz utánfutót?</h3>
+        <img class="trailer-img" src="./img/futo.png" alt="utánfutó" />
+
+        <div class="check-console">
+          <label for="trailer-yes">
+            <div class="question-button">Igen</div>
+            <input type="checkbox" name="" id="trailer-yes" />
+          </label>
+
+          <label for="trailer-no">
+            <div class="question-button">Nem</div>
+            <input type="checkbox" name="" id="trailer-no" />
+          </label>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/app.js"></script>
   </body>
 </html>

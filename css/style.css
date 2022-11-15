@@ -28,10 +28,10 @@ body {
 .active {
   outline: 7px solid var(--main-dif);
   transform: scale(1.1);
-} 
+}
 
-.null{
-    display: none;
+.null {
+  display: none;
 }
 
 main {
@@ -102,10 +102,6 @@ h1 {
   transition: 100ms linear;
 }
 
-
-
-
-
 .row-2-style {
   background-color: var(--main-bc);
   width: 22rem;
@@ -142,22 +138,19 @@ option {
   font-size: 1.3rem;
 }
 
-
 /*Button*/
 
-.button-container{
-    /* background-color: var(--main-test); */
-    width: 100%;
-    text-align: end;
+.button-container {
+  /* background-color: var(--main-test); */
+  width: 100%;
+  text-align: end;
 }
-
-
 
 .btn {
   width: 15rem;
   height: 4rem;
   font-size: 2.1rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   border-radius: 15px;
   border: none;
   background-color: var(--main-dif);
@@ -165,9 +158,76 @@ option {
   transition-duration: 800ms;
 }
 
-.btn:hover{
-    color: var(--main-dif);
-    background-color: var(--main-bc);
-    outline: 3px solid var(--main-dif);
-    cursor: pointer;
+.btn:hover {
+  color: var(--main-dif);
+  background-color: var(--main-bc);
+  outline: 3px solid var(--main-dif);
+  cursor: pointer;
+}
+
+/*-------------------------question-----------------------------*/
+#question-area {
+  position: absolute;
+}
+
+.question {
+  width: 40rem;
+  height: 20rem;
+  padding: 0.3rem 0 2rem 0;
+  background-color: var(--main-bc);
+  outline: 7px solid var(--main-dif);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.question h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  width: 100%;
+}
+
+.trailer-img {
+  width: 290px;
+}
+
+.close-area {
+  width: 100%;
+  padding-right: 0.3rem;
+  text-align: end;
+}
+
+.close-area img {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.check-console {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.question-button {
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--main-dif);
+  color: var(--main-bc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+
+.question-button:hover {
+  color: var(--main-dif);
+  background-color: var(--main-bc);
+  outline: 3px solid var(--main-dif);
+  cursor: pointer;
 }
