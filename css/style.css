@@ -32,6 +32,7 @@ body {
 
 .null {
   display: none;
+
 }
 
 main {
@@ -166,7 +167,7 @@ option {
 }
 
 /*-------------------------question-----------------------------*/
-#question-area {
+#popup {
   position: absolute;
 }
 

@@ -3,7 +3,7 @@ let vehicleCont = document.getElementById("js-container");
 let vbtn = vehicleCont.getElementsByClassName("vi-button");
 let submitButton = document.getElementById("submit");
 let closeX = document.getElementById("close-button");
-let question = document.getElementById("question-area");
+let popup = document.getElementById("popup");
 
 //Vehicle
 let sgk = document.getElementById("sgk-chec");
@@ -46,7 +46,10 @@ function VehicleQuestion() {
   }
   if (sgk.checked === true && location != 1) {
     //Vontatsz utánfutót?
-    question.classList.toggle("null");
+    popup.classList.toggle("null");
+    //Ide megcsinálni azt , hogy az utánfutós dolgot JS generálja
+    //1-Ha IGAZ jelenjen meg a popup ablak (ennek más nevet kell adni)
+    //2-ha IGAZ a JS generálja le a megfelelő tartalmat a question ablakba
   }
 
   if (sgk.checked === true && location === 2 && yes.checked === true) {
@@ -90,6 +93,6 @@ function VehicleQuestion() {
 }
 
 function close() {
-  question.classList.toggle("null");
+  popup.classList.toggle("null");
   console.log("bezártam");
 }
