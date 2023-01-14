@@ -9,6 +9,11 @@ let popupArea = document.getElementById("popup-area");
 //Fnformation Window
 let question = document.getElementById("question-area");
 let speed50 = document.getElementById("50speed");
+let speed70 = document.getElementById("70speed");
+let speed80 = document.getElementById("80speed");
+let speed90 = document.getElementById("90speed");
+let speed110 = document.getElementById("110speed");
+let speed130 = document.getElementById("130speed");
 
 //Vehicle
 let sgk = document.getElementById("sgk-chec");
@@ -55,28 +60,37 @@ function VehicleQuestion() {
     //Vontatsz utánfutót?
     popupArea.classList.toggle("null");
     question.classList.toggle("null");
-    //Ide megcsinálni azt , hogy az utánfutós dolgot JS generálja
-    //1-Ha IGAZ jelenjen meg a popup ablak (ennek más nevet kell adni)
-    //2-ha IGAZ a JS generálja le a megfelelő tartalmat a question ablakba
   }
 
   if (sgk.checked === true && location === 2 && yes.checked === true) {
+    popupArea.classList.toggle("null");
+    speed70.classList.toggle("null");
     console.log("70km/h");
   } else if (sgk.checked === true && location === 2 && no.checked === true) {
+    popupArea.classList.toggle("null");
+    speed90.classList.toggle("null");
     console.log("90km/h");
   }
 
   if (sgk.checked === true && location === 3 && yes.checked === true) {
+    popupArea.classList.toggle("null");
+    speed80.classList.toggle("null");
     console.log("80km/h");
   }
   if (sgk.checked === true && location === 3 && no.checked === true) {
+    popupArea.classList.toggle("null");
+    speed110.classList.toggle("null");
     console.log("110km/h");
   }
 
   if (sgk.checked === true && location === 4 && yes.checked === true) {
+    popupArea.classList.toggle("null");
+    speed80.classList.toggle("null");
     console.log("80km/h");
   }
   if (sgk.checked === true && location === 4 && no.checked === true) {
+    popupArea.classList.toggle("null");
+    speed130.classList.toggle("null");
     console.log("130km/h");
   }
 
