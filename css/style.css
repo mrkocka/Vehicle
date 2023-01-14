@@ -32,7 +32,6 @@ body {
 
 .null {
   display: none;
-
 }
 
 main {
@@ -167,11 +166,13 @@ option {
 }
 
 /*-------------------------question-----------------------------*/
-#popup {
+#popup-area {
   position: absolute;
+  background-color: blue;
+  padding: 2rem;
 }
 
-.question {
+#popup {
   width: 40rem;
   height: 20rem;
   padding: 0.3rem 0 2rem 0;
@@ -183,6 +184,19 @@ option {
   align-items: center;
   gap: 1.3rem;
 }
+
+/* .question {
+  width: 40rem;
+  height: 20rem;
+  padding: 0.3rem 0 2rem 0;
+  background-color: var(--main-bc);
+  outline: 7px solid var(--main-dif);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.3rem;
+} */
 
 .question h3 {
   text-align: center;

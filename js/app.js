@@ -3,7 +3,12 @@ let vehicleCont = document.getElementById("js-container");
 let vbtn = vehicleCont.getElementsByClassName("vi-button");
 let submitButton = document.getElementById("submit");
 let closeX = document.getElementById("close-button");
-let popup = document.getElementById("popup");
+/* let popup = document.getElementById("popup"); */
+let popupArea = document.getElementById("popup-area");
+
+//Fnformation Window
+let question = document.getElementById("question-area");
+let speed50 = document.getElementById("50speed");
 
 //Vehicle
 let sgk = document.getElementById("sgk-chec");
@@ -42,11 +47,14 @@ function VehicleQuestion() {
 
   // Személygépjármű
   if (sgk.checked === true && location === 1) {
+    popupArea.classList.toggle("null");
+    speed50.classList.toggle("null");
     console.log("50km/h");
   }
   if (sgk.checked === true && location != 1) {
     //Vontatsz utánfutót?
-    popup.classList.toggle("null");
+    popupArea.classList.toggle("null");
+    question.classList.toggle("null");
     //Ide megcsinálni azt , hogy az utánfutós dolgot JS generálja
     //1-Ha IGAZ jelenjen meg a popup ablak (ennek más nevet kell adni)
     //2-ha IGAZ a JS generálja le a megfelelő tartalmat a question ablakba
@@ -93,6 +101,7 @@ function VehicleQuestion() {
 }
 
 function close() {
-  popup.classList.toggle("null");
+  popupArea.classList.toggle("null");
+
   console.log("bezártam");
 }

@@ -70,31 +70,63 @@
       <div class="button-container">
         <button class="btn" id="submit">Lássuk</button>
       </div>
+
+      <!-- Felugró ablak -->
+      <section id="popup-area" class="null">
+        <section id="popup">
+          <div class="close-area">
+            <img src="./img/button/close.svg" alt="xGomb" id="close-button" />
+          </div>
+          <!-- Utánfutós kérdéshez tartozó ablak -->
+          <div id="question-area" class="null">
+            <div class="question">
+              <h3>Vontatsz utánfutót?</h3>
+              <img class="trailer-img" src="./img/futo.png" alt="utánfutó" />
+              <div class="check-console">
+                <label for="trailer-yes">
+                  <div class="question-button">Igen</div>
+                  <input type="checkbox" name="" id="trailer-yes" />
+                </label>
+                <label for="trailer-no">
+                  <div class="question-button">Nem</div>
+                  <input type="checkbox" name="" id="trailer-no" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 50 km/h tartozó ablak -->
+          <div id="50speed" class="null">
+            <img src="#" alt="50tábla" />
+          </div>
+
+          <!-- 70 km/h tartozó ablak -->
+          <div id="70speed" class="null">
+            <img src="#" alt="70tábla" />
+          </div>
+
+          <!-- 80 km/h tartozó ablak -->
+          <div id="80speed" class="null">
+            <img src="#" alt="80tábla" />
+          </div>
+
+          <!-- 90 km/h tartozó ablak -->
+          <div id="90speed" class="null">
+            <img src="#" alt="90tábla" />
+          </div>
+
+          <!-- 110 km/h tartozó ablak -->
+          <div id="110speed" class="null">
+            <img src="#" alt="110tábla" />
+          </div>
+
+          <!-- 130 km/h tartozó ablak -->
+          <div id="130speed" class="null">
+            <img src="#" alt="130tábla" />
+          </div>
+        </section>
+      </section>
     </main>
-
-
-    <!-- Utánfutós kérdéshez tartozó ablak -->
-    <div id="popup" class="null">
-      <div class="question">
-        <div class="close-area">
-          <img src="./img/button/close.svg" alt="xGomb" id="close-button" />
-        </div>
-        <h3>Vontatsz utánfutót?</h3>
-        <img class="trailer-img" src="./img/futo.png" alt="utánfutó" />
-
-        <div class="check-console">
-          <label for="trailer-yes">
-            <div class="question-button">Igen</div>
-            <input type="checkbox" name="" id="trailer-yes" />
-          </label>
-
-          <label for="trailer-no">
-            <div class="question-button">Nem</div>
-            <input type="checkbox" name="" id="trailer-no" />
-          </label>
-        </div>
-      </div>
-    </div>
 
     <script src="./js/app.js"></script>
   </body>
